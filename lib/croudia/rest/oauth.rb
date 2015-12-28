@@ -3,6 +3,20 @@ require 'croudia/object/tokens'
 module Croudia
   module Rest
     module OAuth
+
+      # Returns an authorization url.
+      #
+      # @return [String] Authorization url.
+      # @param params [Hash] A customized options.
+      # @option params [String] :state OAuth 2 Authorization State Code.
+      def authorize_url(params = {})
+        unless (params[:state].nil?)
+          "https://api.croudia.com/oauth/authorize?response_type=code&client_id=#{@client_id}&state=#{params[:state]}"
+        else
+          "https://api.croudia.com/oauth/authorize?response_type=code&client_id=#{@client_id}"
+        end
+      end
+
       # Allows a registered application to obtain an OAuth 2 Bearer Token.
       #
       # @see https://developer.croudia.com/docs/oauth

@@ -34,15 +34,22 @@ module Croudia
     include Croudia::Rest::Trends
     include Croudia::Rest::Users
 
-	  # Initializes a new Client object
+    # Initializes a new Client object
     # 
     # @param options [Hash]
     # @return [Croudia::Client]
     def initialize(params = {})
       params.each do |key, value|
         instance_variable_set("@#{key}", value)
-	    end   
-	  end
+      end   
+    end
+
+    # Updates access token.
+    #
+    # @param access_token [String] Access token.
+    def update_access_token(access_token)
+      @access_token = access_token
+    end
 
     def get(endpoint, params = {})
       request = Typhoeus::Request.new(
