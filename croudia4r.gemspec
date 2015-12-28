@@ -4,14 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'croudia/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "croudia"
+  spec.name          = "croudia4r"
   spec.version       = Croudia::VERSION
   spec.authors       = ["Mikazuki Fuyuno"]
   spec.email         = ["mikazuki_fuyuno@outlook.com"]
 
   spec.summary       = %q{Croudia API wrapper gem.}
   spec.description   = %q{Croudia API wrapper gem.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/fuyuno/croudia4r"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.

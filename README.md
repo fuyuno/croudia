@@ -1,4 +1,4 @@
-# Croudia
+# Croudia for Ruby
 
 [Croudia](https://croudia.com) API wrapper gem.  
 You use as [twitter gem](https://github.com/sferik/twitter).
@@ -7,7 +7,7 @@ You use as [twitter gem](https://github.com/sferik/twitter).
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'croudia'
+gem 'croudia4r'
 ```
 
 And then execute:
@@ -16,9 +16,13 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install croudia
+    $ gem install croudia4r
 
 ## Usage
+
+```ruby
+require 'croudia'
+```
 
 Configuring client...
 
@@ -79,5 +83,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/fuyuno/croudia.
+Bug reports and pull requests are welcome on GitHub at https://github.com/fuyuno/croudia4r.
 
