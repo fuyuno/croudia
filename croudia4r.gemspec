@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Croudia API wrapper gem.}
   spec.description   = %q{Croudia API wrapper gem.}
   spec.homepage      = "https://github.com/fuyuno/croudia4r"
+  spec.lisence       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"

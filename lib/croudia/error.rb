@@ -51,7 +51,13 @@ module Croudia
         if (response.body.nil? || response.body.strip.empty?)
           ERRORS[response.code.to_s].new(response.code, 'No message')
         else
-          ERRORS[response.code.to_s].new(response.code, JSON.parse(response.body).message)  
+          json = JSON.parse(response.body)
+          if(json['error'])
+            message = json['error']
+          else
+            message = json['message']
+          end
+          ERRORS[response.code.to_s].new(response.code, message)
         end
       end
     end

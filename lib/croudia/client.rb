@@ -47,7 +47,7 @@ module Croudia
     # Updates access token.
     #
     # @param access_token [String] Access token.
-    def update_access_token(access_token)
+    def update_access_token!(access_token)
       @access_token = access_token
     end
 
@@ -61,7 +61,7 @@ module Croudia
       request.run
       response = request.response
         
-      if(response.code != "200")
+      if(response.code != 200)
         raise Croudia::Error.from_response(response)
       end
       JSON.parse(response.body)
@@ -77,7 +77,7 @@ module Croudia
       request.run
       response = request.response
 
-      if(response.code != "200")
+      if(response.code != 200)
         raise Croudia::Error.from_response(response)
       end
       JSON.parse(response.body)
