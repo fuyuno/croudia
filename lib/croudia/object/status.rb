@@ -6,7 +6,7 @@ require 'croudia/object/source'
 module Croudia
   module Object
     class Status < Identity
-      attr_reader :text, :favorited, :favorites_count, 
+      attr_reader :text, :favorited, :favorited_count, 
         :spread, :spread_count, :in_reply_to_status_id,
         :in_reply_to_status_id_str, :in_reply_to_user_id,
         :in_reply_to_user_id_str, :created_at

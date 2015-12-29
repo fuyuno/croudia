@@ -61,8 +61,8 @@ module Croudia
       request.run
       response = request.response
         
-      if(response.code == "401")
-        
+      if(response.code != "200")
+        raise Croudia::Error.from_response(response)
       end
       JSON.parse(response.body)
     end
@@ -77,7 +77,8 @@ module Croudia
       request.run
       response = request.response
 
-      if(response.code == "401")
+      if(response.code != "200")
+        raise Croudia::Error.from_response(response)
       end
       JSON.parse(response.body)
     end
