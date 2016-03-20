@@ -1,5 +1,6 @@
 # Croudia for Ruby
-[![Gem Version](https://badge.fury.io/rb/croudia4r.svg)](https://badge.fury.io/rb/croudia4r)
+[![Gem](https://img.shields.io/gem/v/croudia4r.svg?style=flat-square)](https://rubygems.org/gems/croudia4r)
+[![GitHub license](https://img.shields.io/github/license/fuyuno/croudia4r.svg?style=flat-square)](LICENSE)
 
 [Croudia](https://croudia.com) API wrapper gem.  
 You use as [twitter gem](https://github.com/sferik/twitter).
